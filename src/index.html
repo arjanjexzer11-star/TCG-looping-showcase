@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Legends to CardVerse — TCG Function Hub</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================================
+       LANDING PAGE
+  ========================================== -->
+
+  <main class="landing" id="home">
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="hero-copy">
+
+        <div class="eyebrow">
+          <span></span>
+          TCG FUNCTION HUB
+        </div>
+
+
+        <h1>
+          Beautiful Game,<br>
+          <strong>Intense Reality.</strong>
+        </h1>
+
+
+        <p>
+          Welcome to Legends to CardVerse, the strategy card game that makes
+          programming concepts easy to learn — but impossible to put down.
+        </p>
+
+
+        <!-- START PLAYING ONLY -->
+
+        <div class="hero-buttons">
+
+          <a
+            class="primary-cta"
+            href="#hub"
+          >
+            START PLAYING
+            <span>→</span>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- HERO CARD ART -->
+
+      <div
+        class="hero-stage"
+        aria-hidden="true"
+      >
+
+        <div class="glow"></div>
+
+        <div class="grid-lines"></div>
+
+
+        <!-- CARD ONE -->
+
+        <div class="floating-card card-one">
+
+          <div class="mini-art art-blue">
+            <span>🐺</span>
+          </div>
+
+          <small>CREATURE</small>
+
+          <b>Night Wolf</b>
+
+          <div class="mini-stats">
+
+            <span>80 ATK</span>
+            <span>70 HP</span>
+
+          </div>
+
+        </div>
+
+
+        <!-- MAIN CARD -->
+
+        <div class="floating-card card-main">
+
+          <div class="mini-art art-purple">
+            <span>🧙</span>
+          </div>
+
+          <small>MAGE</small>
+
+          <b>Arcane Wizard</b>
+
+          <div class="mini-stats">
+
+            <span>95 ATK</span>
+            <span>55 HP</span>
+
+          </div>
+
+        </div>
+
+
+        <!-- CARD THREE -->
+
+        <div class="floating-card card-three">
+
+          <div class="mini-art art-pink">
+            <span>⚔️</span>
+          </div>
+
+          <small>WARRIOR</small>
+
+          <b>Void Knight</b>
+
+          <div class="mini-stats">
+
+            <span>75 ATK</span>
+            <span>95 HP</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================
+       TCG FUNCTION HUB
+  ========================================== -->
+
+  <section
+    class="hub-section"
+    id="hub"
+  >
+
+    <div class="hub-shell">
+
+
+      <!-- HUB HEADER -->
+
+      <header class="hub-header">
+
+        <div>
+
+          <div class="hub-kicker">
+            LEGENDS TO CARDVERSE / FUNCTION LAB
+          </div>
+
+
+          <h2>
+            TCG Function Hub
+          </h2>
+
+
+          <p>
+            Learn programming loops through
+            interactive card-game mechanics.
+          </p>
+
+        </div>
+
+
+        <div class="hub-badge">
+          LIVE LAB • v2
+        </div>
+
+      </header>
+
+
+      <!-- MAIN LOOP TABS -->
+
+      <nav
+        class="tabs"
+        id="tabs"
+      >
+
+        <button
+          class="tab active"
+          data-tab="for-loop"
+        >
+          For Loop
+        </button>
+
+
+        <button
+          class="tab"
+          data-tab="while-loop"
+        >
+          While Loop
+        </button>
+
+
+        <button
+          class="tab"
+          data-tab="do-while-loop"
+        >
+          Do-While Loop
+        </button>
+
+      </nav>
+
+
+      <!-- =====================================
+           FOR LOOP
+      ====================================== -->
+
+      <section
+        class="loop-group active"
+        id="for-loop"
+      >
+
+        <div class="loop-header">
+
+          <div>
+
+            <span class="section-number">
+              01
+            </span>
+
+            <h3>
+              For Loop
+            </h3>
+
+            <p>
+              Repeated iteration over a
+              known collection or range.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="function-tabs">
+
+          <button
+            class="function-tab active"
+            data-function="cards"
+          >
+            Card List
+          </button>
+
+
+          <button
+            class="function-tab"
+            data-function="damage"
+          >
+            Damage Calculator
+          </button>
+
+        </div>
+
+
+        <!-- CARD LIST -->
+
+        <div
+          class="function-panel active"
+          data-function-panel="cards"
+          id="cards"
+        >
+
+          <div class="feature">
+
+            <strong>🃏 Card List</strong>
+
+            <br>
+
+            Every available card is rendered
+            using a <b>for loop</b>.
+
+          </div>
+
+
+          <div
+            id="cardContainer"
+            class="grid"
+          ></div>
+
+
+          <p class="count-line">
+
+            Cards displayed:
+
+            <strong id="cardCount">
+              0
+            </strong>
+
+          </p>
+
+        </div>
+
+
+        <!-- DAMAGE CALCULATOR -->
+
+        <div
+          class="function-panel"
+          data-function-panel="damage"
+        >
+
+          <h3>
+            💥 Battle Damage Calculator
+          </h3>
+
+
+          <div class="controls">
+
+            <label>
+              Attacker Name
+
+              <input
+                id="attackerName"
+                value="Fire Knight"
+              >
+            </label>
+
+
+            <label>
+              Attack
+
+              <input
+                id="attack"
+                type="number"
+                value="100"
+              >
+            </label>
+
+
+            <label>
+              Attacker Element
+
+              <select id="attackerElement">
+
+                <option value="fire">Fire</option>
+                <option value="earth">Earth</option>
+                <option value="wind">Wind</option>
+                <option value="water">Water</option>
+
+              </select>
+
+            </label>
+
+
+            <label>
+              Defender Name
+
+              <input
+                id="defenderName"
+                value="Earth Guardian"
+              >
+            </label>
+
+
+            <label>
+              HP
+
+              <input
+                id="hp"
+                type="number"
+                value="200"
+              >
+            </label>
+
+
+            <label>
+              Defense
+
+              <input
+                id="defense"
+                type="number"
+                value="40"
+              >
+            </label>
+
+
+            <label>
+              Defender Element
+
+              <select id="defenderElement">
+
+                <option value="earth">Earth</option>
+                <option value="fire">Fire</option>
+                <option value="wind">Wind</option>
+                <option value="water">Water</option>
+
+              </select>
+
+            </label>
+
+          </div>
+
+
+          <div class="checks">
+
+            <label>
+              <input
+                id="critical"
+                type="checkbox"
+              >
+              💥 Critical
+            </label>
+
+
+            <label>
+              <input
+                id="shield"
+                type="checkbox"
+              >
+              🛡️ Shield
+            </label>
+
+
+            <label>
+              <input
+                id="poison"
+                type="checkbox"
+              >
+              ☠️ Poison
+            </label>
+
+
+            <label>
+              <input
+                id="heal"
+                type="checkbox"
+              >
+              💚 Heal
+            </label>
+
+          </div>
+
+
+          <button
+            class="action"
+            onclick="calculateBattle()"
+          >
+            Calculate Damage
+          </button>
+
+
+          <div class="result">
+
+            <h3 id="damageResult">
+              0 Damage
+            </h3>
+
+
+            <p id="remainingHP">
+              Remaining HP: 200
+            </p>
+
+
+            <h4 id="winner"></h4>
+
+
+            <div
+              id="battleLog"
+              class="log"
+            ></div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================
+           WHILE LOOP
+      ====================================== -->
+
+      <section
+        class="loop-group"
+        id="while-loop"
+      >
+
+        <div class="loop-header">
+
+          <div>
+
+            <span class="section-number">
+              02
+            </span>
+
+            <h3>
+              While Loop
+            </h3>
+
+            <p>
+              Continue while a condition
+              remains true.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="function-tabs">
+
+          <button
+            class="function-tab active"
+            data-function="battle"
+          >
+            Quick Battle
+          </button>
+
+
+          <button
+            class="function-tab"
+            data-function="hand"
+          >
+            Hand Manager
+          </button>
+
+        </div>
+
+
+        <!-- QUICK BATTLE -->
+
+        <div
+          class="function-panel active"
+          data-function-panel="battle"
+        >
+
+          <div class="battle-row">
+
+            <div class="result">
+
+              <h4>🧙 Player</h4>
+
+              <strong id="playerHP">
+                100 / 100 HP
+              </strong>
+
+              <div class="health">
+
+                <div id="playerHealth"></div>
+
+              </div>
+
+            </div>
+
+
+            <div class="result">
+
+              <h4>👹 Enemy</h4>
+
+              <strong id="enemyHP">
+                100 / 100 HP
+              </strong>
+
+              <div class="health">
+
+                <div id="enemyHealth"></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="result">
+
+            <h4>
+              Choose a card to attack
+            </h4>
+
+
+            <button
+              class="action"
+              onclick="attack(cardsForBattle.FireKnight)"
+            >
+              🔥 Fire Knight (20)
+            </button>
+
+
+            <button
+              class="action"
+              onclick="attack(cardsForBattle.ThunderMage)"
+            >
+              ⚡ Thunder Mage (25)
+            </button>
+
+
+            <button
+              class="action"
+              onclick="attack(cardsForBattle.IceWarrior)"
+            >
+              ❄️ Ice Warrior (15)
+            </button>
+
+
+            <button
+              class="action secondary"
+              onclick="resetGame()"
+            >
+              Reset Battle
+            </button>
+
+
+            <p id="message">
+              Choose a card to attack!
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- HAND MANAGER -->
+
+        <div
+          class="function-panel"
+          data-function-panel="hand"
+        >
+
+          <div class="feature">
+
+            <strong>
+              🃏 Hand Manager
+            </strong>
+
+            <br>
+
+            Draw, select, trade, or use cards
+            while the hand contains cards.
+
+          </div>
+
+
+          <div class="result">
+
+            <div class="hand-buttons">
+
+              <button
+                class="action"
+                id="drawBtn"
+              >
+                ➕ Draw Card
+              </button>
+
+
+              <button
+                class="action"
+                id="tradeBtn"
+                disabled
+              >
+                🔄 Trade Selected
+              </button>
+
+
+              <button
+                class="action"
+                id="useBtn"
+                disabled
+              >
+                ⚔️ Use Selected
+              </button>
+
+
+              <button
+                class="action danger"
+                id="resetHandBtn"
+              >
+                ↺ Reset Hand
+              </button>
+
+            </div>
+
+
+            <p>
+
+              Cards in hand:
+
+              <strong id="handCardCount">
+                0
+              </strong>
+
+              &nbsp;•&nbsp;
+
+              Trades:
+
+              <strong id="handTradeCount">
+                0
+              </strong>
+
+            </p>
+
+          </div>
+
+
+          <div
+            id="cardGrid"
+            class="grid"
+          ></div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================
+           DO-WHILE LOOP
+      ====================================== -->
+
+      <section
+        class="loop-group"
+        id="do-while-loop"
+      >
+
+        <div class="loop-header">
+
+          <div>
+
+            <span class="section-number">
+              03
+            </span>
+
+            <h3>
+              Do-While Loop
+            </h3>
+
+            <p>
+              Execute at least once before
+              checking the condition.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="function-tabs">
+
+          <button
+            class="function-tab active"
+            data-function="packs"
+          >
+            Pack Opener
+          </button>
+
+
+          <button
+            class="function-tab"
+            data-function="turns"
+          >
+            Turn System
+          </button>
+
+        </div>
+
+
+        <!-- PACK OPENER -->
+
+        <div
+          class="function-panel active"
+          data-function-panel="packs"
+        >
+
+          <div class="feature">
+
+            🎁 Open a 3-card random pack,
+            save it to your inventory,
+            then continue or stop.
+
+          </div>
+
+
+          <button
+            class="action"
+            id="openPackBtn"
+            onclick="startOpening()"
+          >
+            🎁 Open Pack
+          </button>
+
+
+          <div id="packResults"></div>
+
+          <div id="choices"></div>
+
+
+          <div class="result">
+
+            <h4>
+              Inventory
+            </h4>
+
+
+            <p id="inventoryCount">
+              Cards Collected: 0
+            </p>
+
+
+            <div
+              id="inventory"
+              class="grid"
+            ></div>
+
+          </div>
+
+        </div>
+
+
+        <!-- TURN SYSTEM -->
+
+        <div
+          class="function-panel"
+          data-function-panel="turns"
+        >
+
+          <div class="feature">
+
+            🔥 Simple turn-by-turn
+            Fire Dragon battle system.
+
+          </div>
+
+
+          <div class="battle-row">
+
+            <div class="result">
+
+              <h4>
+                🔥 Fire Dragon
+              </h4>
+
+              <p>
+                ATK: 25 • HP: 80
+              </p>
+
+            </div>
+
+
+            <div class="result">
+
+              <h4>
+                Enemy
+              </h4>
+
+              <p>
+
+                HP:
+
+                <strong id="turnEnemyHP">
+                  100
+                </strong>
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="result">
+
+            <p>
+
+              Player HP:
+
+              <strong id="turnPlayerHP">
+                100
+              </strong>
+
+              &nbsp;|&nbsp;
+
+              Turn:
+
+              <strong id="turnNumber">
+                0
+              </strong>
+
+            </p>
+
+
+            <button
+              class="action"
+              onclick="startGame()"
+            >
+              Start Game
+            </button>
+
+
+            <button
+              class="action"
+              onclick="playTurn()"
+            >
+              Play Turn
+            </button>
+
+
+            <button
+              class="action secondary"
+              onclick="resetTurnGame()"
+            >
+              Reset
+            </button>
+
+
+            <p id="turnMessage">
+              Click Start Game.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+    LEGENDS TO CARDVERSE • TCG FUNCTION HUB • LEARN BY PLAYING
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
